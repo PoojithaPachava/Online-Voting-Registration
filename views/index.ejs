@@ -5,37 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">    
     <title><%= title %></title>
 </head>
-<body style="background-color: pink; " >
+<body class="voting">
   
-        <div class="container flex flex-wrap items-center justify-between mx-auto">     
-            <b>
-            <p class="py=7">
-                <span class="self-center text-4xl font-semibold whitespace-nowrap text-gray-500 bg-gray-10 ">ONLINE-VOTING-SYSTEM</span>
-        </p>    
-        </b>       
-        </div>
-    <table align="center">
-          <tr>
-            <td>
-            <b >
-            <p class="py-6">ONLINE VOTING APPLICATION</p>
-           </b>
-            </td>
-           </tr>
-           <tr>
-            <td>
-            <p class="py-6">New here?Create a account <a class="text-blue-600" href="/signup">Sign-up</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <p class="py-6">Already have an account?Login here<a class="text-blue-600" href="/login">Sign-in</a></p>
-        </td>
-        </tr>
+    <nav class="p-8 ">
+        <div class="container flex flex-wrap items-center justify-center mx-auto ">
+          <a href="/" class="flex items-center  ">
+            <span class="self-center text-4xl font-semibold whitespace-nowrap text-gray-500 bg-gray-10 ">ONLINE-VOTING-SYSTEM</span>
+          </a>
          
-</table>
+        </div>
+    </nav>    
+    
+    <div class="grid grid-cols-3">
+        <div class="col-start-2 col-span-2">            
+            <p class="py-8 text-4xl  text-gray-600">Welcome to Online Voting Platform</p>
+        </div>
+        
+    </div>
+    <div class="grid grid-cols-8">
+        <div class="col-start-4 col-span-2">
+          <p class="py-2 text-2xl  text-gray-600" >New here? <a class="text-blue-600" href="/signup">Sign-up</a></p>
+          <p class="py-2 text-2xl  text-gray-600">Already have an account? <a class="text-blue-600" href="/login">Sign-in</a></p>
+        </div>
+    </div>
 </body>
 </html>
