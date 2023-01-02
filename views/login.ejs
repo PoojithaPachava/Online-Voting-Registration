@@ -11,7 +11,7 @@
     <nav>
         <div class="container flex flex-wrap items-center justify-between mx-auto">
           <a href="/" class="py-2 px-4 flex items-center">
-            <span class="self-center text-xl font-semibold whitespace-nowrap text-purple-800">welcome to online-voting-system</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-black-800">welcome to online-voting-system</span>
           </a>
         </div>
     </nav>
@@ -21,12 +21,12 @@
             <div>
                 <% if (messages && messages.error && messages.error.length > 0) { %>
                     <% for(var i=0; i<messages.error.length; i++) { %>
-                        <p class="bg-purple-100 my-3 list-none rounded-md px-4 py-2"><%= messages.error[i] %></p>
+                        <p class="bg-blue-100 my-3 list-none rounded-md px-4 py-2"><%= messages.error[i] %></p>
                     <% } %>
                 <% } %>
             </div>
             <div class="mt-4 bg-white shadow-md rounded-lg text-left">
-                <div class="h-2 bg-purple-400 rounded-t-md"></div>
+                <div class="h-2 bg-blue-400 rounded-t-md"></div>
                 <form action="/session" method="post" class="px-8 py-6">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
                     <label for="email" class="block mt-3 font-semibold">Email</label>
@@ -37,7 +37,7 @@
                 </form>
             </div>
             <div class="mt-4">
-                <a href="/signup" class="text-sm hover:text-purple-400">Don't have an account? Sign up</a>
+                <a href="/signup" class="text-sm hover:text-blue-400">Don't have an account? Sign up</a>
             </div>
         </div>
     </div>
