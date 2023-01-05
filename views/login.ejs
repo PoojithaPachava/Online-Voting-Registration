@@ -15,7 +15,7 @@
         </b>
             <div> 
             </div>
-            <div class="mt-4 bg-white shadow-md rounded-lg text-left" style="background-color: cornsilk;">
+            <div class="mt-4 bg-white shadow-md rounded-lg text-left" style="background-color: plum;">
     
                 <form action="/session" method="post" class="px-8 py-6">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
@@ -45,7 +45,7 @@
         </div>
         <% if(messages && messages.error && messages.error.length > 0)  { %>
             <% for(var i=0; i<messages.error.length; i++) { %>
-                   <div class="bg-red-300 text-red-900 p-2 rounded-lg shadow">
+                   <div class="bg-red-300 text-blue-900 p-2 rounded-lg shadow">
                     <center>
                     <li> <%= messages.error[i] %></li>
                 </center>
