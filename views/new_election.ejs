@@ -25,19 +25,19 @@
             <div>
                 <% if (messages && messages.error && messages.error.length > 0) { %>
                     <% for(var i=0; i<messages.error.length; i++) { %>
-                        <p class="bg-blue-100 my-3 list-none rounded-md px-4 py-2"><%= messages.error[i] %></p>
+                        <p class="bg-white-100 my-3 list-none rounded-md px-4 py-2"><%= messages.error[i] %></p>
                     <% } %>
                 <% } %>
             </div>
             <div class="mt-4 bg-white shadow-md rounded-lg text-left">
-                <div class="h-2 bg-blue-400 rounded-t-md"></div>
+                <div class="h-2 bg-white-400 rounded-t-md"></div>
                 <form action="/elections" method="post" class="px-8 py-6">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
-                    <label for="electionName" class="block mt-3 font-semibold">What is your election's name?</label>
+                    <label for="electionName" class="block mt-3 font-semibold">Type Your election's name</label>
                     <input id="electionName" name="electionName" type="text" placeholder="Election name" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md" required>
-                    <label for="urlString" class="block mt-3 font-semibold">Enter a custom URL string (With no spaces)</label>
+                    <label for="urlString" class="block mt-3 font-semibold">Enter a URL string (With no spaces)</label>
                     <input id="urlString" name="urlString" type="text" placeholder="Election URL String" class="border w-full h-5 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-indigo-500 focus:ring-1 rounded-md" required>
-                    <button type="submit" class="mt-6 w-full bg-purple-500 text-white py-2 px-6 rounded-md hover:bg-purple-600 ">Create</button>
+                    <button type="submit" class="mt-6 w-full bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 ">Create</button>
                 </form>
             </div>
         </div>
